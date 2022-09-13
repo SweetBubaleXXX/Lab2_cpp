@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 enum Functions { SH, SQUARE, EXP };
 
 double square(double);
@@ -14,6 +15,7 @@ void showFunctions();
 double getNumber(char);
 
 int* getFunction();
+
 
 int main() {
 	a_po_russki_mozhno;
@@ -63,6 +65,7 @@ int main() {
 	return 0;
 }
 
+
 void showFunctions() {
 	cout << "Доступные функции:" << endl;
 	cout << "\t" << SH << " - sh(x)" << endl;
@@ -70,9 +73,11 @@ void showFunctions() {
 	cout << "\t" << EXP << " - e^x" << endl;
 }
 
+
 double square(double x) {
 	return pow(x, 2);
 }
+
 
 double getNumber(char symbolVar) {
 	double number;
@@ -80,6 +85,7 @@ double getNumber(char symbolVar) {
 	cin >> number;
 	return number;
 }
+
 
 int* getFunction() {
 	int* functionNumber = new int;
